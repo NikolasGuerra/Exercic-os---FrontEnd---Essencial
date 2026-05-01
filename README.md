@@ -1,4 +1,4 @@
-# Exercic-os---FrontEnd---Essencial
+# Exercicios---FrontEnd---Essencial
 HTML - CSS - JAVASCRIPT
 
 Repositório com exercícios práticos.
