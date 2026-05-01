@@ -1,1 +1,141 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mundo das Bikes  - Tudo sobre Ciclismo</title>
+    <!-- Passo 1 (Estilo): Vinculando o CSS -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
 
+    <header>
+        <!-- Passo 4: Título Principal -->
+        <h1 id="topo">Mundo das Bikes</h1>
+        <nav>
+            <!-- Passo 5 e 10: Links e Âncoras -->
+            <a href="#sobre">Sobre</a> | 
+            <a href="#galeria">Galeria</a> | 
+            <a href="#contato">Contato</a> |
+            <a href="https://www.google.com" target="_blank">Notícias Externas</a>
+        </nav>
+    </header>
+
+    <!-- Passo 11: Uso de DIV para agrupar -->
+    <div class="container">
+        
+        <section id="sobre">
+            <h2>Sobre o Ciclismo</h2>
+            <p>O ciclismo é mais do que um esporte, é um estilo de vida que une saúde e aventura.</p>
+            
+            <!-- Passo 7: Inserindo Imagem -->
+            <img src="https://images.unsplash.com/photo-1485965120184-e220f721d03e?w=500" alt="Foto de uma bicicleta de estrada" class="img-perfil">
+
+            <!-- Passo 6: Listas -->
+            <h3>Tipos de Bicicletas</h3>
+            <ul>
+                <li>Mountain Bike (MTB)</li>
+                <li>Road Bike (Speed)</li>
+                <li>Urbana/Híbrida</li>
+            </ul>
+
+            <h3>Benefícios de Pedalar</h3>
+            <ol>
+                <li>Melhora o condicionamento cardiovascular.</li>
+                <li>Reduz o estresse.</li>
+                <li>Preserva o meio ambiente.</li>
+            </ol>
+        </section>
+
+        <hr>
+
+        <!-- Passo 12: Tabela -->
+        <section>
+            <h3>Tabela de Preços e Modelos</h3>
+            <table border="1">
+                <thead>
+                    <tr>
+                        <th>Modelo</th>
+                        <th>Material</th>
+                        <th>Preço Estimado</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Caloi Explorer</td>
+                        <td>Alumínio</td>
+                        <td>R$ 2.500</td>
+                    </tr>
+                    <tr>
+                        <td>Specialized Tarmac</td>
+                        <td>Carbono</td>
+                        <td>R$ 15.000</td>
+                    </tr>
+                    <tr>
+                        <td>Sense Move</td>
+                        <td>Aço</td>
+                        <td>R$ 1.800</td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+
+        <!-- Passo 13 e 14: Vídeo e Áudio -->
+        <section>
+            <h3>Mídias</h3>
+            <p>Veja a performance de uma bike:</p>
+            <video width="320" height="240" controls>
+                <source src="https://www.youtube.com/watch?v=gDSn4Eq0lNw" type="video/mp4">
+                Seu navegador não suporta vídeos.
+            </video>
+            
+            <p>Ouça o som da natureza no pedal:</p>
+            <audio controls>
+                <source src="seu-audio.mp3" type="audio/mpeg">
+            </audio>
+        </section>
+
+        <!-- Passo 15: Formulário Completo -->
+        <section id="contato">
+            <h3>Fale Conosco</h3>
+            <form action="#">
+                <label for="nome">Nome:</label><br>
+                <input type="text" id="nome" name="nome" required placeholder="Digite seu nome"><br><br>
+
+                <p>Qual sua modalidade favorita?</p>
+                <input type="radio" id="mtb" name="mod" value="mtb">
+                <label for="mtb">MTB</label>
+                <input type="radio" id="speed" name="mod" value="speed">
+                <label for="speed">Speed</label><br><br>
+
+                <input type="checkbox" id="news" name="news">
+                <label for="news">Desejo receber novidades por e-mail</label><br><br>
+
+                <button type="submit">Enviar Cadastro</button>
+            </form>
+        </section>
+
+        <!-- Passo 16 e 17: Galeria e Ícones -->
+        <section id="galeria">
+            <h3>Galeria e Redes Sociais</h3>
+            <div class="galeria">
+                <img src="https://picsum.photos/100" alt="Bike 1">
+                <img src="https://picsum.photos/101" alt="Bike 2">
+                <img src="https://picsum.photos/102" alt="Bike 3">
+            </div>
+            
+            <p>Siga-nos:</p>
+            <a href="https://facebook.com"><img src="https://cdn-icons-png.flaticon.com/512/733/733547.png" alt="Facebook" width="30"></a>
+            <a href="https://instagram.com"><img src="https://cdn-icons-png.flaticon.com/512/2111/2111463.png" alt="Instagram" width="30"></a>
+        </section>
+
+        <!-- Passo 10: Âncora para voltar ao topo -->
+        <p><a href="#topo">Voltar ao topo da página</a></p>
+    </div>
+
+    <footer>
+        <p>&copy; 2024 Portal da Bike - Projeto HTML/CSS</p>
+    </footer>
+
+</body>
+</html>
